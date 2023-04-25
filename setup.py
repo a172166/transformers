@@ -388,7 +388,6 @@ extras["dev"] = (
 
 extras["torchhub"] = deps_list(
     "filelock",
-    "huggingface-hub",
     "importlib_metadata",
     "numpy",
     "packaging",
@@ -405,7 +404,6 @@ extras["torchhub"] = deps_list(
 install_requires = [
     deps["importlib_metadata"] + ";python_version<'3.8'",  # importlib_metadata for Python versions that don't have it
     deps["filelock"],  # filesystem locks, e.g., to prevent parallel downloads
-    deps["huggingface-hub"],
     deps["numpy"],
     deps["packaging"],  # utilities from PyPA to e.g., compare versions
     deps["pyyaml"],  # used for the model cards metadata
